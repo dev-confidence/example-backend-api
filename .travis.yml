@@ -24,7 +24,7 @@ after_success:
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
   - git push --quiet https://$GITHUBKEY@github.com/dev-confidence/startup-startup $GIT_TAG > /dev/null 2>&1
 notifications:
-  slack: devconfidence:TLbWAofg2DzzxDo9uHcKveqk
+  slack: devconfidence:9L7cIYPuJCI08OSo5j9s96Z1
 branches:
   except:
     - /^build-[0-9a-z\-]*/
