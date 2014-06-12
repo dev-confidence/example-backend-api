@@ -2,3 +2,5 @@
 .patch
 vendor/
 composer.phar
+
+tests/_output/*
