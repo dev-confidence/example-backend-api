@@ -1,0 +1,21 @@
+{
+    "name": "dev-confidence/example-backend-api",
+    "description": "Working example `Continuous Integration & Delivery` pipeline",
+    "keywords": [
+        "dev confidence",
+        "best practices",
+        "backend api"
+    ],
+    "homepage": "https://github.com/dev-confidence/example-backend-api",
+    "license": [
+        "MIT"
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.8.0",
+        "codeception/codeception": "*",
+        "heroku/heroku-buildpack-php": "*"
+    }
+}
