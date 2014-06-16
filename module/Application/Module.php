@@ -45,22 +45,7 @@ class Module
     public function getServiceConfig()
     {
         return array(
-            'factories' => array(
-                'Application\Model\Service\WebHook' => function ($sm)
-                {
-                    $service = new WebHook();
-                    $service->setServiceLocator($sm);
-
-                    return $service;
-                },
-                'Application\Model\Service\Broker' => function ($sm)
-                {
-                    $service = new Broker();
-                    $service->setServiceLocator($sm);
-
-                    return $service;
-                }
-            )
+            'factories' => array()
         );
     }
 }
