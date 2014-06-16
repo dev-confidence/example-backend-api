@@ -17,6 +17,9 @@ class UserController extends AbstractRestfulController
     public function getList()
     {
         $data = array(
+            'meta' => array(
+                'version' => file_get_contents('public/version')
+            ),
             'data' => array(
                 array(
                     'title'   => 'Mr',
