@@ -30,4 +30,4 @@ branches:
     - /^build-[0-9a-z\-]*/
 env:
   global:
-    secure: HYP32uaNJm2TMTzQrpE2T8+xt5dT4gi1PasQJ/GLUeUuS79HlpiNmrgToyvRrG+5Oj3pBjsDl6rY+xbCH+SdlPP4MfFS07npdMheaa7ECgT1W0AWZY4BrwVi8w4qs/5ZfW/DoaiNbote5R7QcELUo3+G/ocBfAJEWn08PB1fKnE=
+    secure: "aqg1K9h2Efa6zrNbP8EMIZTl+xxyBrGcYTm5bXTyoSvtsDWwV5dVngiFiQPnZXZANje3fuwi+89RmoyjzKCxauxuPA/gJpBGbh5k7xNpMsGiWkZ3CNfBUMDjotsmTJgvfTLLkkPmPNm0XDAqkju2Acz76EkdxNdqohXOg4keexM="
