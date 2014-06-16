@@ -35,6 +35,6 @@ deploy:
   provider: heroku
   api_key:
     secure: "a8/xFEZz8vKR8ejTaFxj7kI9cVcEd4mbOEJvdNJjFqXgN/pUZCn3nT2rrYtVs2RCKBas3fPb3F6Pu9BO8FiWXPNaeHnY40KkCCgQZYEybwujwL0kDSPpb+yaYcC2h2YipSYrb6CrrWyFNAkRuYu50jzt7YjSzXWZ44+RDp3QnXI="
-  app: example-backend-api
+  app: dc-example-backend-api
   on:
     repo: dev-confidence/example-backend-api
