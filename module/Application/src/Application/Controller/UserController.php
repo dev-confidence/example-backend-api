@@ -18,7 +18,7 @@ class UserController extends AbstractRestfulController
     {
         $data = array(
             'meta' => array(
-                'version' => file('public/version')[0]
+                'version' => file_get_contents('public/version')
             ),
             'data' => array(
                 array(
