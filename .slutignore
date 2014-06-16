@@ -1,0 +1,4 @@
+tests/
+docs/
+module/Application/tests/
+composer.phar
