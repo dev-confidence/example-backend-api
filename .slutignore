@@ -1,4 +1,6 @@
 tests/
+travis/
 docs/
 module/Application/tests/
 composer.phar
+*.md
