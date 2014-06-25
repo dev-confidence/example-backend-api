@@ -23,6 +23,9 @@ after_success:
   - git commit -m "Set build VERSION number" public/version
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
   - git push --quiet https://$GITHUBKEY@github.com/dev-confidence/example-backend-api $GIT_TAG > /dev/null 2>&1
+  - curl -H "Content-Type: application/json" -d '{"build":"$TRAVIS_BUILD_NUMBER","status":"successful"}' https://www.statsmix.com/api/v2/track?$api_key&value=1&name=travis-example-backend-api
+after_failure:
+  - curl -H "Content-Type: application/json" -d '{"build":"$TRAVIS_BUILD_NUMBER","status":"failure"}' https://www.statsmix.com/api/v2/track?$api_key&value=1&name=travis-example-backend-api
 notifications:
   slack: devconfidence:9L7cIYPuJCI08OSo5j9s96Z1
 branches:
@@ -30,7 +33,9 @@ branches:
     - /^build-[0-9a-z\-]*/
 env:
   global:
-    secure: "aqg1K9h2Efa6zrNbP8EMIZTl+xxyBrGcYTm5bXTyoSvtsDWwV5dVngiFiQPnZXZANje3fuwi+89RmoyjzKCxauxuPA/gJpBGbh5k7xNpMsGiWkZ3CNfBUMDjotsmTJgvfTLLkkPmPNm0XDAqkju2Acz76EkdxNdqohXOg4keexM="
+    secure: 
+      - "aqg1K9h2Efa6zrNbP8EMIZTl+xxyBrGcYTm5bXTyoSvtsDWwV5dVngiFiQPnZXZANje3fuwi+89RmoyjzKCxauxuPA/gJpBGbh5k7xNpMsGiWkZ3CNfBUMDjotsmTJgvfTLLkkPmPNm0XDAqkju2Acz76EkdxNdqohXOg4keexM="
+      - "EEHDPKCe+bQhUvCev2teTxVfDG24fwM9IDcEH8HPjaJDhx61dIXurdAbKoLO3Y1/qvon1sfn56oiP7C49Zax+H7EYVr4H4X8pMW+sMk6Led6GecXIubfmvr9GM8ZEJweu4+5sYLWesaPtKqf2KwX05gHW3HRcfDsPKVnxJYgduY="
 deploy:
   provider: heroku
   api_key:
