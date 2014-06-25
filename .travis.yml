@@ -33,9 +33,8 @@ branches:
     - /^build-[0-9a-z\-]*/
 env:
   global:
-    secure: 
-      - "aqg1K9h2Efa6zrNbP8EMIZTl+xxyBrGcYTm5bXTyoSvtsDWwV5dVngiFiQPnZXZANje3fuwi+89RmoyjzKCxauxuPA/gJpBGbh5k7xNpMsGiWkZ3CNfBUMDjotsmTJgvfTLLkkPmPNm0XDAqkju2Acz76EkdxNdqohXOg4keexM="
-      - "EEHDPKCe+bQhUvCev2teTxVfDG24fwM9IDcEH8HPjaJDhx61dIXurdAbKoLO3Y1/qvon1sfn56oiP7C49Zax+H7EYVr4H4X8pMW+sMk6Led6GecXIubfmvr9GM8ZEJweu4+5sYLWesaPtKqf2KwX05gHW3HRcfDsPKVnxJYgduY="
+    - secure: "aqg1K9h2Efa6zrNbP8EMIZTl+xxyBrGcYTm5bXTyoSvtsDWwV5dVngiFiQPnZXZANje3fuwi+89RmoyjzKCxauxuPA/gJpBGbh5k7xNpMsGiWkZ3CNfBUMDjotsmTJgvfTLLkkPmPNm0XDAqkju2Acz76EkdxNdqohXOg4keexM="
+    - secure: "EEHDPKCe+bQhUvCev2teTxVfDG24fwM9IDcEH8HPjaJDhx61dIXurdAbKoLO3Y1/qvon1sfn56oiP7C49Zax+H7EYVr4H4X8pMW+sMk6Led6GecXIubfmvr9GM8ZEJweu4+5sYLWesaPtKqf2KwX05gHW3HRcfDsPKVnxJYgduY="
 deploy:
   provider: heroku
   api_key:
