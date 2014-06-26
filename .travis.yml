@@ -24,9 +24,9 @@ after_success:
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
   - git push --quiet https://$GITHUBKEY@github.com/dev-confidence/example-backend-api $GIT_TAG > /dev/null 2>&1
   - curl http://google.com
-  - curl -s -H "Content-Type: application/json" -d '{"build":"$TRAVIS_BUILD_NUMBER","status":"successful"}' "https://www.statsmix.com/api/v2/track?$api_key&value=1&name=travis-example-backend-api"
+  - curl -s -H "Content-Type: application/json" -d '{"build":"$TRAVIS_BUILD_NUMBER","status":"successful"}' "https://www.statsmix.com/api/v2/track?$api_key&value=1&metric_id=15120"
 after_failure:
-  - curl -s -H "Content-Type: application/json" -d '{"build":"$TRAVIS_BUILD_NUMBER","status":"failure"}' "https://www.statsmix.com/api/v2/track?$api_key&value=1&name=travis-example-backend-api"
+  - curl -s -H "Content-Type: application/json" -d '{"build":"$TRAVIS_BUILD_NUMBER","status":"failure"}' "https://www.statsmix.com/api/v2/track?$api_key&value=1&metric_id=15120"
 notifications:
   slack: devconfidence:9L7cIYPuJCI08OSo5j9s96Z1
 branches:
