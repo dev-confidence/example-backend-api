@@ -65,7 +65,12 @@
             <?php echo $this->content; ?>
             <hr>
             <footer>
-                <p>&copy; <?php echo date('Y') ?> by Dev Confidence Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
+                <p>
+                    &copy; <?php echo date('Y') ?> by Dev Confidence Ltd. <?php echo $this->translate('All rights reserved.') ?>
+                </p>
+                <p>
+                    Deployed version: <i><?php echo file_get_contents('public/version'); ?></i>
+                </p>
             </footer>
         </div> <!-- /container -->
         <?php echo $this->inlineScript() ?>
