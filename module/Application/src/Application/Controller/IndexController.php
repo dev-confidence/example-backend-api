@@ -3,7 +3,6 @@ namespace Application\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Helper\ViewModel;
-use Zend\View\Model\JsonModel;
 
 /**
  * Class IndexController
