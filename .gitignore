@@ -2,5 +2,5 @@
 .patch
 vendor/
 composer.phar
-
+.idea/
 tests/_output/*
